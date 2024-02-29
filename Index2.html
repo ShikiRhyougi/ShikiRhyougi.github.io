@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Housing Showcase</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/71b0cc07ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="gallery">
+    <div class="container">
+        <h1 class="sub-title">MY GALLERY</h1>
+
+        <!-- Buttons for filtering -->
+        <div class="filter-buttons">
+            <button onclick="filterGallery('All')">All</button>
+            <button onclick="filterGallery('Japanese')">Japanese</button>
+            <button onclick="filterGallery('Mansion')">Mansion</button>
+            <button onclick="filterGallery('Others')">Others</button>
+        </div>
+
+        <div class="gallery-section" id="nightPenthouseMansion">
+            <br><h2>Night Penthouse (Small/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt0" class="work">
+                    <img src="images/Small1.jpeg" onclick="openModal('images/Small1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/penthouse1.jpeg" onclick="openModal('images/penthouse1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/penthouse2.jpeg" onclick="openModal('images/penthouse2.jpeg')">
+                </div>
+                <div class="work">
+                     <img src="images/penthouse3.jpeg" onclick="openModal('images/penthouse3.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="teaHouseJapanese">
+            <br><h2>Tea House (Medium/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt1"class="work">
+                    <img src="images/background3.jpeg" onclick="openModal('images/background3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/tea house1.jpeg" onclick="openModal('images/tea house1.jpeg')">
+                </div>
+            </div>
+        </div>
+           
+        <div class="gallery-section" id="spaceshipAdventureOthers">
+            <br><h2>Spaceship Adventure (Large/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt2" class="work">
+                    <img src="images/large1.jpeg" onclick="openModal('images/large1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/spaceship1.jpeg" onclick="openModal('images/spaceship1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/spaceship2.jpeg" onclick="openModal('images/spaceship2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/spaceship5.jpeg" onclick="openModal('images/spaceship5.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/spaceship6.jpeg" onclick="openModal('images/spaceship6.jpeg')">
+                </div>
+            </div>
+        </div>
+            
+        <div class="gallery-section" id="rainyJapandiHouseJapanese">
+            <br><h2>Rainy Japandi House (Medium/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt3" class="work">
+                    <img src="images/medium2.jpeg" onclick="openModal('images/medium2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy japandi 1.jpeg" onclick="openModal('images/rainy japandi 1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy japandi 2.jpeg" onclick="openModal('images/rainy japandi 2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy japandi 3.jpeg" onclick="openModal('images/rainy japandi 3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy japandi 4.jpeg" onclick="openModal('images/rainy japandi 4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy japandi 5.jpeg" onclick="openModal('images/rainy japandi 5.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="sharlayanRoomMansion">
+            <br><h2>Sharlayan Room (Apartment/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt4" class="work">
+                    <img src="images/sharlayan apartment1.png" onclick="openModal('images/sharlayan apartment1.png')">
+                </div>
+                <div class="work">
+                    <img src="images/sharlayan apartment2.jpeg" onclick="openModal('images/sharlayan apartment2.jpeg')">
+                </div> 
+                <div class="work">
+                    <img src="images/sharlayan apartment3g.png" onclick="openModal('images/sharlayan apartment3g.png')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="RestInThavnairOthers">
+            <br><h2>Rest in Thavnair (Medium/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt5" class="work">
+                    <img src="images/thavnair house2.jpeg" onclick="openModal('images/thavnair house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/thavnair house1.jpeg" onclick="openModal('images/thavnair house1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/thavnair house3.jpeg" onclick="openModal('images/thavnair house3.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="winterHouseMansion">
+            <br><h2>Winter House (Medium/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt6" class="work">
+                    <img src="images/snow house4.jpeg" onclick="openModal('images/snow house4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/snow house1.jpeg" onclick="openModal('images/snow house1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/snow house2.jpeg" onclick="openModal('images/snow house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/snow house5.jpeg" onclick="openModal('images/snow house5.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="greenJapandiHouseJapanese">
+            <br><h2>Green Japandi House (Medium/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt7" class="work">
+                    <img src="images/rexis house1.jpeg" onclick="openModal('images/rexis house1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rexis house2.jpeg" onclick="openModal('images/rexis house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rexis house3.jpeg" onclick="openModal('images/rexis house3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rexis house4.jpeg" onclick="openModal('images/rexis house4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rexis house5.jpeg" onclick="openModal('images/rexis house5.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="classyMansionMansion">
+            <br><h2>Classy Mansion (Large/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt8" class="work">
+                    <img src="images/old fc house3.jpeg" onclick="openModal('images/old fc house3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/old fc house1.jpeg" onclick="openModal('images/old fc house1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/old fc house2.jpeg" onclick="openModal('images/old fc house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/old fc house4.jpeg" onclick="openModal('images/old fc house4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/old fc house5.jpeg" onclick="openModal('images/old fc house5.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/old fc house6.jpeg.jpeg" onclick="openModal('images/old fc house6.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="streetNoodleStoreOthers">
+            <br><h2>Street Noodle Store (Small/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt9"class="work">
+                    <img src="images/noodle street store 2.jpeg" onclick="openModal('images/noodle street store 2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/noodle street store 1.jpeg" onclick="openModal('images/noodle street store 1.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="modernJapaneseHouseJapanese">
+            <br><h2>Modern Japanese House (Small/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt10"class="work">
+                    <img src="images/nox house1.png" onclick="openModal('images/nox house1.png')">
+                </div>
+                <div class="work">
+                    <img src="images/nox house2.png" onclick="openModal('images/nox house2.png')">
+                </div>
+                <div class="work">
+                    <img src="images/nox house3.png" onclick="openModal('images/nox house3.png')">
+                </div>
+                <div class="work">
+                    <img src="images/nox house4.png" onclick="openModal('images/nox house4.png')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="darkModernJapaneseHouseJapanese">
+            <br><h2>Dark Modern Japanese House (Small/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt11"class="work">
+                    <img src="images/Lores house4.png" onclick="openModal('images/Lores house4.png')">
+                </div>
+                <div class="work">
+                    <img src="images/Lores house1.png" onclick="openModal('images/Lores house1.png')">
+                </div>
+                <div class="work">
+                    <img src="images/Lores house3.png" onclick="openModal('images/Lores house3.png')">
+                </div>
+                <div class="work">
+                    <img src="images/Lores house2.png" onclick="openModal('images/Lores house2.png')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="dillysCabinMansion">
+            <br><h2>Dilly's Cabin (Medium/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt12"class="work">
+                    <img src="images/Dillys Cabin 2.jpeg" onclick="openModal('images/Dillys Cabin 2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/Dillys Cabin 1.jpeg" onclick="openModal('images/Dillys Cabin 1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/Dillys Cabin 3.jpeg" onclick="openModal('images/Dillys Cabin 3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/Dillys Cabin 4.jpeg" onclick="openModal('images/Dillys Cabin 4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/Dillys Cabin 5.jpeg" onclick="openModal('images/Dillys Cabin 5.jpeg')">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-section" id="dillysJapandiHouseJapanese">
+            <br><h2>Dilly's Japandi House (Medium/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt13"class="work">
+                    <img src="images/dilly alt house2.jpeg" onclick="openModal('images/dilly alt house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/dilly alt house3.jpeg" onclick="openModal('images/dilly alt house3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/dilly alt house4.jpeg" onclick="openModal('images/dilly alt house4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/dilly alt house5.jpeg" onclick="openModal('images/dilly alt house5.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/dilly alt house6.jpeg" onclick="openModal('images/dilly alt house6.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/dilly alt house1.png" onclick="openModal('images/dilly alt house1.png')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="greenJapandiFCHouseJapanese">
+            <br><h2>Green Japandi FC House (Large/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt14"class="work">
+                    <img src="images/japandi fc house4.jpeg" onclick="openModal('images/japandi fc house4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi fc house1.jpeg" onclick="openModal('images/japandi fc house1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi fc house2.jpeg" onclick="openModal('images/japandi fc house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi fc house3.jpeg" onclick="openModal('images/japandi fc house3.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="modernRainyHouseMansion">
+            <br><h2>Modern Rainy House (Medium/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt15"class="work">
+                    <img src="images/rainy green4.jpeg" onclick="openModal('images/rainy green4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy green1.jpeg" onclick="openModal('images/rainy green1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy green2.jpeg" onclick="openModal('images/rainy green2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/rainy green3.jpeg" onclick="openModal('images/rainy green3.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="japandiHouseWithPlantsJapanese">
+            <br><h2>Japandi House with Plants (Medium/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt16"class="work">
+                    <img src="images/japandi with plants 2.jpeg" onclick="openModal('images/japandi with plants 2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi with plants 1.jpeg" onclick="openModal('images/japandi with plants 1.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="beachHouseOthers">
+            <br><h2>Beach House (Small/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt17"class="work">
+                    <img src="images/beach house3.jpeg" onclick="openModal('images/beach house3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/beach house1.jpeg" onclick="openModal('images/beach house1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/beach house2.jpeg" onclick="openModal('images/beach house2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/beach house4.jpeg" onclick="openModal('images/beach house4.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="fantasyDreamBathroomOthers">
+            <br><h2>Fantasy Dream Bathroom (Apartment/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt18"class="work">
+                    <img src="images/dream bath 2.png" onclick="openModal('images/dream bath 2.png')">
+                </div>
+                <div class="work">
+                    <img src="images/dream bath 1.png" onclick="openModal('images/dream bath 1.png')">
+                </div>
+                <div class="work">
+                    <img src="images/dream bath 3.png" onclick="openModal('images/dream bath 3.png')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="redNightclubOthers">
+            <br><h2>Red Nightclub (Large/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt19"class="work">
+                    <img src="images/club3.jpeg" onclick="openModal('images/club3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/club1.jpeg" onclick="openModal('images/club1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/club2.jpeg" onclick="openModal('images/club2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/club4.jpeg" onclick="openModal('images/club4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/club5.jpeg" onclick="openModal('images/club5.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/club6.jpeg" onclick="openModal('images/club6.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="gothMansionMansion">
+            <br><h2>Goth Mansion (Medium/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt20"class="work">
+                    <img src="images/goth mansion1.jpeg" onclick="openModal('images/goth mansion1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/goth mansion2.jpeg" onclick="openModal('images/goth mansion2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/goth mansion3.jpeg" onclick="openModal('images/goth mansion3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/goth mansion4.jpeg" onclick="openModal('images/goth mansion4.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="pinkJapandiHouseJapanese">
+            <br><h2>Pink Japandi House (Medium/Japanese)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt21"class="work">
+                    <img src="images/japandi pink3.jpeg" onclick="openModal('images/japandi pink3.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi pink1.jpeg" onclick="openModal('images/japandi pink1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi pink2.jpeg" onclick="openModal('images/japandi pink2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi pink4.jpeg" onclick="openModal('images/japandi pink4.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi pink5.jpeg" onclick="openModal('images/japandi pink5.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/japandi pink6.jpeg" onclick="openModal('images/japandi pink6.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="redBDSMRoomOthers">
+            <br><h2>Red BDSM Room (Apartment/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt22"class="work">
+                    <img src="images/bdsm room1.jpeg" onclick="openModal('images/bdsm room1.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/bdsm room2.jpeg" onclick="openModal('images/bdsm room2.jpeg')">
+                </div>
+                <div class="work">
+                    <img src="images/bdsm room4.jpeg" onclick="openModal('images/bdsm room4.jpeg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="beautifulFantasyHouseOthers">
+            <br><h2>Beautiful Fantasy House (Small/Others)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt23"class="work">
+                    <img src="images/msq house.png" onclick="openModal('images/msq house.png')">
+                </div>
+                <div class="work">
+                    <img src="images/msq house2.png" onclick="openModal('images/msq house2.png')">
+                </div>
+                <div class="work">
+                    <img src="images/msq house3.jpg" onclick="openModal('images/msq house3.jpg')">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="classyCasinoRoomMansion">
+            <br><h2>Classy Casino Room (Small/Mansion)</h2>
+            <div class="work-list">
+                <div id="meinAnkerpunkt26"class="work">
+                    <img src="images/old club1.jpeg" onclick="openModal('images/old club1.jpeg')">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<!-- JavaScript functions for modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="">
+    </div>
+</div>
+
+<script>
+    function openModal(imageSrc) {
+        var modal = document.getElementById('myModal');
+        var modalImage = document.getElementById('modalImage');
+        modalImage.src = imageSrc;
+        modal.style.display = 'block';
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Function to filter gallery based on category
+    function filterGallery(category) {
+        var sections = document.querySelectorAll('.gallery-section');
+        sections.forEach(function(section) {
+            var categoryClass = section.id.toLowerCase().replace(/\s/g, ''); // Convert category to lowercase and remove spaces
+            if (category === 'All' || categoryClass.includes(category.toLowerCase())) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+
+</div>
+</div>
+
+</body>
+</html>
